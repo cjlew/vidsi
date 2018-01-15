@@ -3,7 +3,9 @@ Lifion coding test
 
 ## Entity Relationship Diagram
 
-## SQL Query 
+![Vidsi ERD](Lifion_ERD.jpg)
+
+## SQL Query
 
 ```sql
 SELECT
