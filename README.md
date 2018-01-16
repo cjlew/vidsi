@@ -39,6 +39,7 @@ WHERE
 From these results we can send emails to users who need to be sent a cancellation notice.
 
 
+If we do not want to use SQL, we can use the following algorithm to find the subscribers in need of a cancellation notice in linear time.
 
 ```ruby
 def cancellation_notice
@@ -54,7 +55,7 @@ def find_past_due_invoice
   past_due = Set.new
 
   Invoice.all.each do |invoice|
-    if invoice.status == 'unpaid' && invoices.due_date > DateTime.now
+    if invoice.status == 'Unpaid' && invoices.due_date > DateTime.now
       past_due.add(invoice.subscriber_id)
     end
   end
